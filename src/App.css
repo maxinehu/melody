@@ -1,0 +1,65 @@
+.App {
+  min-width: 900px;
+}
+
+* {
+  transition: background .35s ease-in-out;
+}
+
+header {
+  margin-left: 10%;
+}
+
+header img {
+  width: 25%;
+}
+
+header > ul > * {
+  vertical-align: middle;
+}
+
+header > ul > li {
+  display: inline-block;
+  margin: 0 1.5%;
+}
+
+header > ul a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+header > ul > li > a {
+  border-radius: 20px;
+}
+
+header > ul > li > a:hover,  header > ul > li > a.active {
+  background-color: rgba(9,70,176,1);
+  color: white;
+}
+
+header .service_tab .subMenu {
+  display: none;
+  /* margin-top: 5px; */
+  padding: 10px 0;
+  background-color: rgba(9,70,176,0.9);
+  border-radius: 5px;
+}
+
+header .service_tab .subMenu a {
+  color: white;
+}
+
+header .service_tab .subMenu li {
+  display: block;
+}
+
+header .service_tab:hover .subMenu{
+  display: block;
+  position: absolute;
+}
+
+header .subMenu li a:hover, .submenu_active {
+  background-color: rgba(9,70,176,1);
+}
