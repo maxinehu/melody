@@ -1,2 +1,4 @@
-### `npm install`
-### `npm start`
+run this app by
+
+# `npm install`
+# `npm start`
