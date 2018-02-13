@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, NavLink, Switch } from 'react-router-dom';
 import Home from './Home.js';
 import Team from './Team.js';
 import Cases from './Cases.js';
@@ -34,9 +34,12 @@ class App extends Component {
             </ul>
           </header>
           <Switch>
+            <Route exact path="/" render={() => (
+                <Redirect to="/home"/>
+            )}/>
             <Route path="/home" component={Home} />
             <Route path="/team" component={Team} />
-            <Route path="/services" component={Services} />
+            <Route exact path="/services" component={Services} />
             <Route path="/services/studying" component={Studying} />
             <Route path="/services/immigration" component={Immigration} />
             <Route path="/services/others" component={Others} />
